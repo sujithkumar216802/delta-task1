@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menu">
+    <fragment
+        android:id="@+id/normal"
+        android:name="com.sujithkumar.deltatask1.Normal"
+        android:label="Normal">
+        <action
+            android:id="@+id/action_normal_to_enter"
+            app:destination="@id/enter"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_normal_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/hacker"
+        android:name="com.sujithkumar.deltatask1.Hacker"
+        android:label="Hacker">
+        <action
+            android:id="@+id/action_hacker_to_enter"
+            app:destination="@id/enter"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_hacker_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/hackerpp"
+        android:name="com.sujithkumar.deltatask1.Hackerpp"
+        android:label="Hackerpp">
+        <action
+            android:id="@+id/action_hackerpp_to_gameOver"
+            app:destination="@id/gameOver"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_hackerpp_to_enter"
+            app:destination="@id/enter"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+
+            android:id="@+id/action_hackerpp_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menu"
+        android:name="com.sujithkumar.deltatask1.Menu"
+        android:label="Menu">
+        <action
+            android:id="@+id/action_menu_to_enter"
+            app:destination="@id/enter"
+
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/enter"
+        android:name="com.sujithkumar.deltatask1.Enter"
+        android:label="Enter">
+        <action
+            android:id="@+id/action_enter_to_normal"
+            app:destination="@id/normal"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_enter_to_hacker"
+            app:destination="@id/hacker"
+
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_enter_to_hackerpp"
+            app:destination="@id/hackerpp"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOver"
+        android:name="com.sujithkumar.deltatask1.GameOver"
+        android:label="GameOver">
+        <action
+            android:id="@+id/action_gameOver_to_enter"
+            app:destination="@id/enter"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_gameOver_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/menu"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>
