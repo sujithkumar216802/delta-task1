@@ -69,7 +69,7 @@ public class Hackerpp extends Fragment {
         if (!rep.isHackerppdone()) {
             new CountDownTimer(rep.getTimeleft(), 100) {
                 public void onFinish() {
-                    result(77);
+                    result(0);
                 }
 
                 public void onTick(long millisUntilFinished) {
@@ -131,8 +131,9 @@ public class Hackerpp extends Fragment {
                     option3.setBackgroundColor(Color.argb(128, 255, 0, 0));
                     break;
             }
+            if (i != 0)
+                layout.setBackgroundColor(Color.argb(80, 255, 0, 0));
 
-            layout.setBackgroundColor(Color.argb(80, 255, 0, 0));
             if (!rep.isCancel()) {
                 if (rep.getThreeseconddelay() == 3000 && nav.getCurrentDestination() == currentdestination)
                     vibrate();

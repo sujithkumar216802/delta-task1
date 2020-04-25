@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/menu">
+    app:startDestination="@id/start2">
     <fragment
         android:id="@+id/normal"
         android:name="com.sujithkumar.deltatask1.Normal"
@@ -153,5 +153,18 @@
             app:popUpTo="@id/menu"
             app:popUpToInclusive="true" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/start2"
+        android:name="com.sujithkumar.deltatask1.start"
+        android:label="start" >
+        <action
+            android:id="@+id/action_start2_to_menu"
+            app:destination="@id/menu"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/start2"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
