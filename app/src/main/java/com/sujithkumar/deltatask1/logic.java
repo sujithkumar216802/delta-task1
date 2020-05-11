@@ -18,6 +18,7 @@ class logic {
 
     void findoptions2(int num) {
         corrrectans = rand.nextInt(3);
+        correct.add(1);
         for (int i = 2; i <= (Math.min(num, 1000)); i++) {
             if ((i * 2 <= num && num % i == 0) || i == num) {
                 correct.add(i);

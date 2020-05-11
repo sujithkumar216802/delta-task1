@@ -70,6 +70,7 @@
 
         <RadioButton
             android:id="@+id/option1"
+            android:textColor="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
@@ -78,12 +79,14 @@
 
         <RadioButton
             android:id="@+id/option2"
+            android:textColor="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp" />
 
         <RadioButton
             android:id="@+id/option3"
+            android:textColor="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp" />

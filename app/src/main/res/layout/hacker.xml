@@ -20,6 +20,7 @@
         app:layout_constraintVertical_bias="0.61">
 
         <RadioButton
+            android:textColor="#FFF"
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,12 +30,14 @@
 
         <RadioButton
             android:id="@+id/option2"
+            android:textColor="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp" />
 
         <RadioButton
             android:id="@+id/option3"
+            android:textColor="#FFF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp" />
